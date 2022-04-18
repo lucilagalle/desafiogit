@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 90px 40px 200px 850px 250px 110px;
+    grid-template-areas: "log    log"
+                         "nav    nav"
+                         "header header"
+                         "main   main"
+                         "aside  aside"
+                         "footer footer";
+}
+.logo{
+    grid-area: log;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navegador{
+    grid-area: nav;
+    background-color: rgb(227, 227, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+ul li{
+    display: inline-block;
+    
+}
+li{
+    list-style: none;
+    font-family: Poppins;
+    margin-inline: 5px;
+    color: rgb(228, 182, 129);
+    font-size: 13px;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(228, 182, 129);
+}
+.encabezado{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pexel{
+    width: 320px;
+    height: 200px;
+}
+.primario{
+    grid-area: main;
+}
+.secundario{
+    grid-area: aside;
+}
+.pie{
+    grid-area: footer;
+    background-color: rgb(227, 227, 236);
+    display: flex;
+    justify-content: space-around;
+}
+.rafiki{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redes{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+.foot1 div{
+    font-family: Poppins;
+    color: rgb(228, 182, 129);
+}
+.footimg{
+    width: 35px;
+    height: 20px;;
+    border-radius: 5px;
+}
+.foot1 ul li{
+    list-style: none;
+    margin-top: 5px;
+    font-size: 10px;
+}
+.imagentarj{
+    width: 95px;
+    border-radius: 5px;
+    margin-left: -15px;
+}
+.titulotarj{
+    margin-top: -18px;
+    margin-left: -15px;
+
+}
+.tarjeta{
+    width: 65px;
+    height: 100px;
+    background-color: rgb(227, 227, 236);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 5px 5px 15px 5px #dbdbdb;
+}
+.contenedortarj{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.botontarj{
+    border-radius: 3px;
+    font-family: Poppins;
+    width: 65px;
+    height: 20px;
+    color: rgb(108, 12, 12);
+    border-color: rgb(108, 12, 12);
+}
+.tarjeta p{
+    color: rgb(108, 12, 12);
+    font-family: Poppins;
+    font-size: 10px;
+}
+.primariotitulo{
+    font-family: Poppins;
+    color: rgb(228, 182, 129);
+    margin-left: 35px;
+}
+.video{
+    text-align: center;
+}
+.nutricion{
+    width: 320px;
+    height: 200px;
+}
+h1{
+    font-family: Poppins;
+    color: rgb(243, 197, 140);
+    font-size: 25px;
+}
+.secundariotitulo{
+    font-family: Poppins;
+    color: rgb(228, 182, 129);
+    
+}
+.contenedor1{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 90px 40px 200px 850px 850px 110px;
+    grid-template-areas: "log    log"
+                         "nav    nav"
+                         "header header"
+                         "main   main"
+                         "aside1  aside1"
+                         "footer footer";
+
+}
+.secundario1{
+    grid-area: aside1;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+@media (min-width: 768px) {
+   .contenedor{
+        gap: 30px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 150px 70px 500px 300px 400px 150px;
+        grid-template-areas: "log         log         log         "
+                             "nav         nav         nav         "
+                             "header      header      header      "
+                             "main        main        main        "
+                             "aside       aside       aside       "
+                             "footer      footer      footer      "; 
+    }
+    .contenedor1{
+        gap: 30px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 150px 70px 500px 300px 300px 150px;
+        grid-template-areas: "log         log         log         "
+                             "nav         nav         nav         "
+                             "header      header      header      "
+                             "main        main        main        "
+                             "aside1      aside1      aside1      "
+                             "footer      footer      footer      "; 
+
+    }
+    .logo{
+        width: 768px;
+    }
+    .rafiki{
+        width: 280px;
+        height: 100px;
+    }
+    li{
+        font-size: 25px;
+        margin-inline: 35px;
+    }
+    .pexel{
+        width: 768px;
+        height: 500px;
+    }
+    .encabezado{
+        width: 768px;
+    }
+    .primariotitulo{
+        font-size: 25px;
+    }
+    .tarjeta p{
+        font-size: 14px;
+        text-align: center;
+
+    }
+    .tarjeta{
+        width: 89px;
+        height: 120px;
+    }
+    .imagentarj{
+        width: 110px;
+        margin-left: -10px;
+    }
+    .botontarj{
+        margin-left: 15px
+    }
+    .secundariotitulo{
+        font-size: 25px;
+    }
+    .nutricion{
+        width: 520px;
+        height: 350px;
+    }
+    .foot1 ul li{
+        font-size: 15px;
+    }
+}
