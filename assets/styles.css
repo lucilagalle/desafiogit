@@ -20,13 +20,53 @@
     justify-content: center;
     align-items: center;
 }
+.formulario{
+    background-color: rgb(251, 251, 247);
+    text-align: center;
+    margin-inline: 10px;
+    width: 270px;
+    height: 450px;
+    font-family: Poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(228, 182, 129);
+    font-size: 15px;
+    border-radius: 5px;
+}
+.inform{
+    height: 20px;
+    width: 145px;
+    transition: 2s;
+}
+.inform:focus{
+    height: 30px;
+    width: 200px;
+}
+.email{
+    height: 20px;
+    width: 175px;
+    transition: 2s;
+}
+.email:focus{
+    height: 30px;
+    width: 200px;
+}
+.texto{
+    height: 20px;
+    width: 175px;
+    transition: 2s;
+}
+.texto:focus{
+    height: 100px;
+    width: 175px;
+}
 .navegador{
     grid-area: nav;
     background-color: rgb(227, 227, 236);
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 ul li{
     display: inline-block;
@@ -39,6 +79,19 @@ li{
     color: rgb(228, 182, 129);
     font-size: 13px;
     
+}
+ul ul{
+    display: none;
+    position: absolute;
+}
+.navegador ul ul li{
+    display: block;
+    font-size: 20px;
+    background-color: rgb(251, 251, 247);
+    width: 105px;
+}
+.navegador ul li:hover ul{
+    display: block;
 }
 a{
     text-decoration: none;
@@ -92,6 +145,7 @@ a{
     margin-top: 5px;
     font-size: 10px;
 }
+
 .imagentarj{
     width: 95px;
     border-radius: 5px;
@@ -100,7 +154,6 @@ a{
 .titulotarj{
     margin-top: -18px;
     margin-left: -15px;
-
 }
 .tarjeta{
     width: 65px;
@@ -197,6 +250,48 @@ h1{
     .logo{
         width: 768px;
     }
+    .formulario{
+        background-color: rgb(251, 251, 247);
+        text-align: center;
+        margin-inline: 10px;
+        width: 600px;
+        height: 450px;
+        font-family: Poppins;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(228, 182, 129);
+        font-size: 15px;
+        border-radius: 5px;
+        margin-left: 80px;
+    }
+    .inform{
+        height: 20px;
+        width: 145px;
+        transition: 2s;
+    }
+    .inform:focus{
+        height: 30px;
+        width: 200px;
+    }
+    .email{
+        height: 20px;
+        width: 175px;
+        transition: 2s;
+    }
+    .email:focus{
+        height: 30px;
+        width: 200px;
+    }
+    .texto{
+        height: 20px;
+        width: 175px;
+        transition: 2s;
+    }
+    .texto:focus{
+        height: 100px;
+        width: 175px;
+    }
     .rafiki{
         width: 280px;
         height: 100px;
@@ -240,5 +335,168 @@ h1{
     }
     .foot1 ul li{
         font-size: 15px;
+    }
+}
+@media (min-width: 1024px) {
+    .contenedor{
+        gap: 50px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 150px 70px 600px 350px 500px 150px;
+        grid-template-areas: "log         log         log       log"
+                             "nav         nav         nav       nav"
+                             "header      header      header    header"
+                             "main        main        main      main"
+                             "aside       aside       aside     aside"
+                             "footer      footer      footer    footer"; 
+    }
+    .contenedor1{
+        gap: 30px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 150px 70px 600px 400px 400px 150px;
+        grid-template-areas: "log         log         log         log"
+                             "nav         nav         nav         nav"
+                             "header      header      header      header"
+                             "main        main        main        main"
+                             "aside1      aside1      aside1      aside1"
+                             "footer      footer      footer      footer"; 
+
+    
+                            }
+
+    .logo{
+        margin-left: 360px;
+    }
+    .rafiki{
+        width: 400px;
+        height: 150px;
+
+    }
+    .pexel{
+        width: 1020px;
+        height: 550px;
+        margin-left: 750px;
+    }
+
+    .nutricion{
+        width: 720px;
+        height: 460px;
+    }
+    .tarjeta{
+        width: 135px;
+        height: 170px;
+        transition: 2s;
+    }
+    .tarjeta:hover{
+        width: 140px;
+        height: 185px;
+    }
+    .imagentarj{
+        width: 150px;
+        border-radius: 5px;
+    }
+    .tarjeta p{
+        font-size: 20px;
+    }
+    .secundariotitulo{
+        font-size: 35px;
+    }
+    li{
+        font-size: 35px;
+    }
+    .primariotitulo{
+        font-size: 35px;
+    }
+    .pie{
+        display: block;
+    }
+
+    .foot1 ul li{
+        font-size: 20px;
+    }
+    .secundario1{
+        display: block
+    
+    }
+    .pexel1{
+        width: 100%;
+        height: 550px;
+        margin-left: 750px;
+    }
+    .botontarj{
+        width: 75px;
+        height: 25px;
+        margin-left: 25px;
+    }
+    .inform{
+        height: 20px;
+        width: 175px;
+        transition: 2s;
+    }
+    .inform:focus{
+        height: 30px;
+        width: 200px;
+    }
+    .email{
+        height: 20px;
+        width: 175px;
+        transition: 2s;
+    }
+    .email:focus{
+        height: 30px;
+        width: 200px;
+    }
+    .texto{
+        height: 20px;
+        width: 175px;
+        transition: 2s;
+    }
+    .texto:focus{
+        height: 100px;
+        width: 175px;
+    }
+    .formulario{
+        background-color: rgb(251, 251, 247);
+        text-align: center;
+        margin-inline: 15px;
+        width: 500px;
+        height: 500px;
+        font-family: Poppins;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(228, 182, 129);
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    .email{
+       margin-right: 10px;
+    }
+    .emailtext{
+        margin-left: 40px;
+    }
+    .textolabel{
+        margin-left: -40px;
+    }
+    .texto{
+        height: 55px;
+    }
+    .tarjetacontacto{
+        margin-left: 450px;
+    }
+    .primariotitulo{
+        animation-name: movi;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes movi {
+        0%{
+            transform: translate(0px,0px);
+        }
+        25%{
+            transform: translate(75px,0px);
+        }
+        25%{
+            transform: translate(75px,0px);
+        }
     }
 }
